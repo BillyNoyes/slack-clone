@@ -12,7 +12,7 @@ function Chat() {
       <div className="chat__header">
         <div className="chat__headerLeft">
           <h4 className="chat__channelName">
-            <strong># general</strong>
+            <strong>#general</strong>
             <StarBorderOutlinedIcon />
           </h4>
         </div>
