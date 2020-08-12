@@ -1,3 +1,7 @@
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
 .sidebar {
   color: white;
   flex: 0.3;
