@@ -11,7 +11,7 @@ function Chat() {
     <div className="chat">
       <div className="chat__header">
         <div className="chat__headerLeft">
-          <h4 className="chat_channelName">
+          <h4 className="chat__channelName">
             <strong># general</strong>
             <StarBorderOutlinedIcon />
           </h4>
