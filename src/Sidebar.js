@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Sidebar.css";
 import SidebarOption from "./SidebarOption";
 import db from "./firebase";
+import { useStateValue } from "./StateProvider";
 
 // Import Material UI
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
@@ -19,6 +20,7 @@ import AddIcon from "@material-ui/icons/Add";
 
 function Sidebar() {
   const [channels, setChannels] = useState([]);
+  const [{ user }] = useStateValue();
 
   // Grab snapshot of the rooms collection from the dB
   useEffect(() => {
@@ -39,7 +41,7 @@ function Sidebar() {
           <h2>Slack</h2>
           <h3>
             <FiberManualRecordIcon />
-            William Noyes
+            {user?.displayName}
           </h3>
         </div>
         <CreateIcon />
